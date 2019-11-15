@@ -6,9 +6,7 @@ import Header from '../../components/header/Header';
     return (
         <div>
             <Header/>
-            <p>
-                home
-            </p>
+      
         </div>
     )
 }

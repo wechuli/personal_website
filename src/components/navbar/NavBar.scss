@@ -1,36 +1,116 @@
-#navbar{
-    .nav{
+@import '../../styles/config';
+
+#navbar {
+    background: $dark-color;
+    color: $white-color;
+
+    .nav {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        height: 12vh;
-        .nav-items ul{
+        padding-top: 2rem;
+        margin: 0 auto;
+
+        // height: 12vh;
+        .nav-items ul {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            li{
-                margin:0 2rem;
+
+            li {
+                margin: 0 2rem;
                 font-weight: bold;
-          
+                font-size: 2.2rem;
+
             }
         }
-        .personal-logo{
+
+        // personal logo
+        .personal-logo {
             display: flex;
             align-items: center;
-            img{
+            margin-bottom: 2rem;
+
+            img {
                 width: 7rem;
                 height: 7rem;
                 border-radius: 50%;
-                
+
             }
-            .name-desc{
+
+            .name-desc {
                 margin-left: 1rem;
-                p:first-child{
+
+                p:first-child {
                     font-size: 2.2rem;
-                    font-weight: 800;
+                    font-weight: bold;
+                }
+
+                .last {
+                    color: $primary-color;
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width:992px) and (min-width:421px) {
+    #navbar {
+        .nav {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .personal-logo {
+                flex-direction: column;
+                justify-content: center;
+                align-items: space-evenly;
+                text-align: center;
+            }
+
+            .nav-items ul {
+                flex-flow: wrap;
+                text-align: center;
+                margin: inherit;
+                justify-content: space-evenly;
+
+                .nav-item {
+                    width: 23%;
+
+                    &:last-child {
+                        width: 50%;
+                        text-align: center;
+                        margin: 1rem auto;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+    #navbar {
+        .nav {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .personal-logo {
+                flex-direction: column;
+                justify-content: center;
+                align-items: space-evenly;
+                text-align: center;
+            }
+
+            .nav-items ul {
+                flex-direction: column;
+                li{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
     }
 }

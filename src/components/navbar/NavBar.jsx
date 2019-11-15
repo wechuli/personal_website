@@ -14,25 +14,23 @@ const NavBar = () => {
             </div>
             <div className="name-desc">
               <p>
-             Wechuli Paul
+                <span s className="last">Wechuli</span> Paul
               </p>
-              <p>
-                  Software Developer & Cloud Architect
-              </p>
+              <p>Software Developer & Cloud Architect</p>
             </div>
           </div>
           <div className="nav-items">
             <ul>
-              <li>
+              <li className="nav-item">
                 <a href="">Projects</a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a href="">About Me</a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a href="">Blog</a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a className="btn-main">Contact Me</a>
               </li>
             </ul>

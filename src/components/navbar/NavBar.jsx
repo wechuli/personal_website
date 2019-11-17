@@ -14,6 +14,7 @@ const NavBar = () => {
             </div>
             <div className="name-desc">
               <p>
+                
                 <span s className="last">Wechuli</span> Paul
               </p>
               <p>Software Developer & Cloud Architect</p>

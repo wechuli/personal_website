@@ -1,11 +1,49 @@
+@import '../../styles/config';
+
 #header {
     background-color: black;
-    background-image:   linear-gradient(to bottom right,rgba(0,128,128,0.7),rgba(0,128,128,0.7)), url(../../assets/header.jpg);
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../assets/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 60vh;
-    position: relative;
-    
-   
+    height: 80vh;
+    color: $white-color;
+
+    .container {
+        height: 100%;
+    }
+
+    .personal-details {
+        margin-left: 3rem;
+        display: flex;
+        line-height: 2;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2.2rem;
+        // align-items: center;
+        height: 100%;
+
+        .name {
+            font-size: 4rem;
+        }
+
+        .title {
+            margin-bottom: 2rem;
+        }
+        .contact-icons{
+            margin-bottom: 2rem;
+            i{
+                display: inline-block;
+                margin-right: 1rem;
+            }
+        }
+
+        .cta-buttons a {
+            margin-bottom: 1rem;
+
+            &:first-child {
+                margin-right: 1rem;
+            }
+        }
+    }
 }

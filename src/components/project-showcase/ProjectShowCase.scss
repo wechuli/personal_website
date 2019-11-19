@@ -1,0 +1,15 @@
+@import '../../styles/config';
+
+#project-showcase {
+    height: 100vh;
+    margin-top: 2rem;
+    .container{
+        height: 100%;
+    }
+
+    .showcase-area {
+        height: 100%;
+        border: 1px solid $primary-color;
+        padding: 2rem;
+    }
+}

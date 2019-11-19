@@ -4,9 +4,11 @@ import './ProjectShowCase.scss';
 const ProjectShowCase = () => {
     return (
 
-        <section className="project-showcase">
+        <section id="project-showcase">
             <div className="container">
-                this is the showcase
+                <div className="showcase-area">
+hi there
+                </div>
             </div>
         </section>
     )

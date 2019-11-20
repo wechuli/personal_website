@@ -9,6 +9,8 @@ const app = express();
 
 //database connection
 
+require("./helpers/dbConnection");
+
 //middleware
 app.use(helmet());
 app.use(cors());

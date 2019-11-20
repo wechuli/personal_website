@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "backend for personal website",
   "main": "src/app.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js",
+    "test": "env-cmd -f ./config/test.env jest --watch --runInBand"
+  },
   "repository": "https://github.com/wechuli/personal_website.git",
   "author": "Wechuli <wechulipaul@yahoo.com>",
   "license": "MIT",
@@ -10,6 +15,13 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "helmet": "^3.21.2",
+    "mongoose": "^5.7.12",
     "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.0.1",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4",
+    "supertest": "^4.0.2"
   }
 }

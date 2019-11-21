@@ -1,14 +1,14 @@
 import React from 'react'
 
- const BlogCreate = () => {
+ const Article = () => {
     return (
         <div>
             <p>
-                create blog page
+                my blogs
             </p>
         </div>
     )
 }
 
 
-export default BlogCreate;
+export default Article;

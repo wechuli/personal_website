@@ -1,17 +1,25 @@
-import React from 'react';
-import './ProjectShowCase.scss';
+import React from "react";
+import "./ProjectShowCase.scss";
+import ProjectCard from "../project-card/ProjectCard";
+import projects from '../../data/projects.json';
 
 const ProjectShowCase = () => {
-    return (
+   
+  return (
+    <section id="project-showcase">
+      <div className="container">
+          <div className="section-title">
+              My Projects
+              <div className="bottom-line"></div>
+          </div>
 
-        <section id="project-showcase">
-            <div className="container">
-                <div className="showcase-area">
-hi there
-                </div>
-            </div>
-        </section>
-    )
-}
+        <div className="showcase-area">
+            {projects.map(item=><ProjectCard {...item}/>)}
+          
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default ProjectShowCase
+export default ProjectShowCase;

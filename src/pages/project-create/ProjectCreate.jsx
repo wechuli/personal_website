@@ -9,4 +9,4 @@ const ProjectCreate = () => {
     )
 }
 
-export default ProjectCreate
+export default ProjectCreate;

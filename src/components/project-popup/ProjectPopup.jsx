@@ -4,14 +4,29 @@ import { ProjectsContext } from "../../context/ProjectsContext";
 import GenericPopup from "../generic-popup/GenericPopup";
 
 const ProjectPopup = () => {
-  const { setShowProjectPopup } = useContext(ProjectsContext);
+  const { setShowProjectPopup,currentShowCaseProject } = useContext(ProjectsContext);
+  const {id,title,content,repo_link,cover_image,date} = currentShowCaseProject
   return (
     <GenericPopup>
       <div id="project-details">
-        <i
-          onClick={() => setShowProjectPopup(false)}
-          className="close fas fa-times fa-2x"
-        ></i>
+        <div className="container">
+          <i
+            onClick={() => setShowProjectPopup(false)}
+            className="close fas fa-times fa-2x"
+          ></i>
+          <div className="project">
+            <div className="heading">
+              <div className="section-title">
+                {title}
+                <div className="bottom-line"></div>
+              </div>
+            </div>
+            <div className="cover">cover</div>
+            <div className="content">content</div>
+            <div className="cat">categories</div>
+            <div className="tech">technologies</div>
+          </div>
+        </div>
       </div>
     </GenericPopup>
   );

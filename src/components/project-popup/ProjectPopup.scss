@@ -2,6 +2,43 @@
 
 #project-details {
 
+    .project {
+        display: grid;
+        gap:2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'heading heading'
+            'cover content'
+            'cover content'
+            'cover content'
+            'cat cat'
+            'tech tech'
+        ;
+
+        .heading {
+            grid-area: heading;
+            border:1px solid red;
+        }
+
+        .cover {
+            grid-area: cover;
+        }
+
+        .content {
+            grid-area: content;
+        }
+
+        .cat {
+            grid-area: cat;
+        }
+
+        .tech {
+            grid-area: tech;
+        }
+
+    }
+
+
     // The Close Button
     .close {
         position: absolute;

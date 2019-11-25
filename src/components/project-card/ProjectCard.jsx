@@ -1,27 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./ProjectCard.scss";
+import { ProjectsContext } from "../../context/ProjectsContext";
 
 const ProjectCard = props => {
   const {
-    id,
-    title,
-    date,
-    content,
-    repo_link,
-    cover_image,
-    changeCurrentPopupProject,
-    changeProjectPopup
-  } = props;
+    projects,
+    setShowProjectPopup,
+    setCurrentShowCaseProject
+  } = useContext(ProjectsContext);
+  const { id, title, date, content, repo_link, cover_image } = props;
   const changeProjectOnPopup = () => {
-    changeCurrentPopupProject({
-      id,
-      title,
-      date,
-      content,
-      repo_link,
-      cover_image
-    });
-    changeProjectPopup(true);
+    const projectOnPopup = projects.find(project => project.id === id);
+    setCurrentShowCaseProject(projectOnPopup);
+    setShowProjectPopup(true);
   };
 
   return (

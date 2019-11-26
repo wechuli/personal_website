@@ -7,8 +7,7 @@ import AboutMe from "../../components/about-me/AboutMe";
 import { ProjectsContext } from "../../context/ProjectsContext";
 
 const Home = () => {
-
-  // get function to set the projects context from the ProjectContext context  
+  // get function to set the projects context from the ProjectContext context
   const { setProjects } = useContext(ProjectsContext);
 
   // fetch all projects - run once
@@ -16,11 +15,14 @@ const Home = () => {
     setProjects(projects);
   }, []);
   return (
-    <div>
+    <>
       <Header />
+      <div className="dotted-line" />
       <ProjectShowCase />
+      <div className="dotted-line" />
       <AboutMe />
-    </div>
+      <div className="dotted-line" />
+    </>
   );
 };
 

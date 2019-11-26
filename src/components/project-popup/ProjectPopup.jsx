@@ -4,8 +4,17 @@ import { ProjectsContext } from "../../context/ProjectsContext";
 import GenericPopup from "../generic-popup/GenericPopup";
 
 const ProjectPopup = () => {
-  const { setShowProjectPopup,currentShowCaseProject } = useContext(ProjectsContext);
-  const {id,title,content,repo_link,cover_image,date} = currentShowCaseProject
+  const { setShowProjectPopup, currentShowCaseProject } = useContext(
+    ProjectsContext
+  );
+  const {
+    id,
+    title,
+    content,
+    repo_link,
+    cover_image,
+    date
+  } = currentShowCaseProject;
   return (
     <GenericPopup>
       <div id="project-details">
@@ -21,10 +30,30 @@ const ProjectPopup = () => {
                 <div className="bottom-line"></div>
               </div>
             </div>
-            <div className="cover">cover</div>
-            <div className="content">content</div>
-            <div className="cat">categories</div>
-            <div className="tech">technologies</div>
+            <div className="cover">
+              <img src={cover_image} alt="" />
+            </div>
+            <div className="content">
+              <h2 className="section-subtitle">Description</h2>
+              <p>
+                {content}
+              </p>
+              <h2 className="section-subtitle">Repo Links</h2>
+              <ul>
+              <li><a href={repo_link}>GitHub</a></li>
+              </ul>
+              <h2 className="section-subtitle">Website</h2>
+              <ul>
+                <li><a href={repo_link}>Website</a></li>
+              </ul>
+            </div>
+            <div className="cat">
+              <h2 className="section-subtitle">Categories</h2>
+            </div>
+            <div className="tech">
+              <h2 className="section-subtitle">technologies</h2>
+            
+            </div>
           </div>
         </div>
       </div>

@@ -17,15 +17,24 @@
 
         .heading {
             grid-area: heading;
-            border:1px solid red;
+        
         }
 
         .cover {
             grid-area: cover;
+            height:50rem;
+            overflow: hidden;
+            border-radius: 5px 5px 5px 5px;
+            img{
+                width: 100%;
+                min-height: 100%;
+                border-radius: 5px 5px 0 0;
+            }
         }
 
         .content {
             grid-area: content;
+          
         }
 
         .cat {

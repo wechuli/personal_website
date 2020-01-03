@@ -18,9 +18,9 @@ const Home = () => {
     <>
       <Header />
       <div className="dotted-line" />
-      <ProjectShowCase />
+      <AboutMe />      
       <div className="dotted-line" />
-      <AboutMe />
+      <ProjectShowCase />
       <div className="dotted-line" />
     </>
   );

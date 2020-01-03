@@ -18,21 +18,23 @@ const AboutMe = () => {
               AI Enthusiast. I have a passion for developing cloud-first,
               intelligent applications.
               <br />
-              <br/>
+              <br />
               I can work as a full-stack developer writing both mobile and web
               applications. I have also worked extensively with end-to-end
               Internet of Things (IoT) solutions.
               <br />
-              <br/>
+              <br />
               Additionally, I am a certified cloud developer with both AWS and
               Azure.
             </p>
-            <a href="" className="btn-dark">
-              Let's Talk
-            </a>
-            <a href="" className="btn-light">
-              See My Resume
-            </a>
+            <div className="aboutmebtns">
+              <a href="" className="btn-dark">
+                Let's Talk
+              </a>
+              <a href="" className="btn-light">
+                See My Resume
+              </a>
+            </div>
           </div>
         </div>
       </div>

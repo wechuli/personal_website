@@ -20,3 +20,16 @@
     }
 }
 
+@media screen and (max-width:992px) and (min-width:421px) {
+.about-content{
+    display: flex;
+    flex-direction: column;
+    // .image-container{
+    //     display: none;
+    // }
+}
+}
+
+@media screen and (max-width:420px) {
+
+}
